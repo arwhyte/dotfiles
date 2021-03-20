@@ -21,7 +21,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 
 [gpg]
   program = /usr/local/bin/gpg
