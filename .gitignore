@@ -1,5 +1,6 @@
 # do not commit username and credentials
 **/git/.gitconfig.local
+**/zsh/.zsh_history
 
 # Intellij
 .idea/
