@@ -29,13 +29,6 @@
 # Python 3
 #export PYTHON3_HOME=/usr/local/bin/python3
 
-# Django
-# export DJANGO_SECRET_KEY="7)^)6=@)fmy#_1ad=(yzv@knxni@t^s0tlc8p3c^gag9%rhu-q"
-
-# Google OAuth2 credentials
-# export SOCIAL_AUTH_GOOGLE_OAUTH2_KEY="917249327263-rlhs78pkonp5g1856ofkti05c2rqqqs0.apps.googleusercontent.com"
-# export SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET="1Vtg8FcrSTrCwLGLE_DuNu-i"
-
 # GPG
 # export GPG_TTY=$(tty)
 

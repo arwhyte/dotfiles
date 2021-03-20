@@ -1,4 +1,5 @@
 # Git: do not commit username and credentials
+**/bash/.bash.local
 **/git/.gitconfig.local
 
 # Shell: Do not commit history files
