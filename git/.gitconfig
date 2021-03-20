@@ -1,5 +1,5 @@
 [include]
-  path = ~/.gitconfig.local
+  path = /Users/arwhyte/.gitconfig.local
 
 [alias]
   st = status
@@ -7,23 +7,29 @@
   co = checkout
   br = branch
 
+[core]
+	excludesfile = /Users/arwhyte/.gitignore.global
+
 [colour]
   diff = auto
   status = auto
   branch = auto
   interactive = auto
 
-[core]
-  excludesfile = ~/.gitignore
+[credential]
+	helper = osxkeychain
 
 [difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[gpg]
+  program = /usr/local/bin/gpg
 
 [merge]
   tool = opendiff
   summary = true
 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

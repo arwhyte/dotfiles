@@ -1,4 +1,9 @@
-# navigation aliases
+# APP START
+
+alias rstudio='LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/server: open -a RStudio'
+
+
+# NAVIGATION
 
 # standard folders
 alias dev='cd ~/Development'
@@ -13,9 +18,11 @@ alias svnrepos='cd ~/Development/repos/svn/'
 alias arwhyte='cd ~/Development/repos/github/arwhyte'
 alias ims='cd ~/Development/repos/github/IMSGlobal'
 alias scripts='cd ~/Development/repos/github/arwhyte/scripts'
+alias umsi-arwhyte='cd ~/Development/repos/github/umsi-arwhyte'
 
-# rstudio
-alias rstudio='LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/server: open -a RStudio'
+# code repos by project
+alias dotfiles='cd ~/Development/repos/github/arwhyte/dotfiles'
+alias si506='cd ~/Development/repos/github/umsi-arwhyte/SI506'
 
 # tomcat
 alias tomcat='cd /opt/tomcat'
@@ -23,3 +30,8 @@ alias tomcatlogs='cd /opt/tomcat/logs'
 
 # zsh
 alias ohmy='cd ~/.oh-my-zsh'
+
+
+# SWITCHES
+alias ls='ls -laGH'
+# alias ls="/bin/ls -la"

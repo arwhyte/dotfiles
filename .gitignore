@@ -1,5 +1,5 @@
 # do not commit username and credentials
-/.gitconfig.local
+**/git/.gitconfig.local
 
 # Intellij
 .idea/
@@ -8,3 +8,6 @@
 *.iws
 *.uml
 out/
+
+# VS Code
+*.code-workspace
