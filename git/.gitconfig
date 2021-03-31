@@ -21,7 +21,11 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
+
+[github]
+  user = arwhyte
+  token = cdfb96339b93e2d59cbb711a561a2c7936d1171f
 
 [gpg]
   program = /usr/local/bin/gpg
@@ -33,3 +37,11 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
+[pull]
+	rebase = false
+
+[user]
+	name = Anthony Whyte
+	email = anthwhyte@gmail.com
+	signingkey = 50CC4835413F12E1
