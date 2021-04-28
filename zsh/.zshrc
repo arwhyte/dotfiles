@@ -98,6 +98,16 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# ruby-build
+# ruby-build installs a non-Homebrew OpenSSL for each Ruby version installed and
+# these are never upgraded. To link Rubies to Homebrew's OpenSSL 1.1 (which is
+# upgraded) add the following to your ~/.zshrc:
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# Note: this may interfere with building old versions of Ruby (e.g <2.4) that use
+# OpenSSL <1.1.
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
